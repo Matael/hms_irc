@@ -7,6 +7,8 @@ This project adheres to `Semantic Versioning <http://semver.org/>`__.
 [Unreleased]
 ------------
 
+- Using Debian packaging for production instead of tedious run in userspace
+
 [2.0] - 2016-06-19
 ------------------
 

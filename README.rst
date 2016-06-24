@@ -2,7 +2,7 @@
 hms_irc, the HAUM’s IRC microservice
 ====================================
 
-A microservice that follows routing keys on a RabbitMQ direct exchanger and
+A microservice that follows routing keys on an AMQP direct exchanger and
 publish messages on IRC depending on the messages received.
 
 Using
@@ -11,7 +11,7 @@ Using
 Debian-like systems
 -------------------
 
-First build the `.deb` file::
+First build the ``.deb`` file::
 
     $ dpkg-buildpackage -us -uc -b
 
@@ -19,8 +19,10 @@ Then install it on the system as superuser::
 
     # dpkg -i ../hms-irc*.deb
 
-And that's it. A systemd `.service` is also installed and for starting and
-stopping the microservice in a convenient way::
+And that's it.
+
+A systemd `.service` is also installed and for starting and stopping the
+microservice in a convenient way::
 
     # systemctl start hms-irc
 
