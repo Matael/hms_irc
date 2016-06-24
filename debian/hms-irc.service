@@ -5,8 +5,8 @@ Requires=multi-user.target
 
 [Service]
 Type=simple
-User=hms_irc
-ExecStart=/home/hms_irc/hms_irc/systemd/run.sh
+User=_hms-irc
+ExecStart=/usr/share/python/hms-irc/bin/hms_irc
 Restart=on-failure
 RestartSec=360
 
