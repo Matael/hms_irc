@@ -5,3 +5,6 @@ __pycache__
 MANIFEST
 dist
 build
+.eggs
+*.egg-info
+

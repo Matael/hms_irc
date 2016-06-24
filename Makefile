@@ -6,6 +6,10 @@ SERVICE_PATH:=$(SYSTEMD_DIR)/$(SERVICE)
 all:
 	@echo make install
 	@echo make uninstall
+    @echo make deb
+
+deb:
+    dpkg-buildpackage -us -uc
 
 install:
 	cp systemd/$(SERVICE) $(SERVICE_PATH)
